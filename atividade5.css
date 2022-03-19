@@ -1,0 +1,197 @@
+/* CSS RESER */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    background-color: #fff;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #ADFF2F;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#menu_tablet {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: #006400;
+    color: #fff;
+    padding-top: 5px;
+    z-index: 2;
+    visibility: hidden;
+}
+
+#menu_tablet a {
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 4%;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#section_esquerda {
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 500px;
+    background-color: #87CEFA;
+}
+
+#section_esquerda nav {
+    position: relative;
+    float: left;
+    width: 90%;
+    height: 200px;
+    background-color: #fff;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#section_esquerda nav a {
+    position: relative;
+    clear: left;
+    display: block;
+    background-color: #696969;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px;
+    margin: 2px;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+#section_esquerda aside {
+    position: relative;
+    float: left;
+    width: 90%;
+    height: 240px;
+    background-color: #fff;
+    font-size: 15px;
+    margin: 20px;
+}
+
+#section_direita {
+    position: relative;
+    float: left;
+    width: 70%;
+    height: 500px;
+    background-color: #8A2BE2;
+}
+
+#section_direita article {
+    position: relative;
+    float: left;
+    width: 98%;
+    height: 468px;
+    margin: 1%;
+    margin-bottom: 0px;
+    background-color: #d3d3d3;
+}
+
+#section_direita article h1 {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    background-color: #ADD8E6;
+    margin-bottom: 10px;
+}
+
+#section_direita article p {
+    position: relative;
+    width: 98%;
+    height: 135px;
+    background-color: #CD5C5C;
+    color: #fff;
+    font-size: 14px;
+    padding: 1%;
+    margin-bottom: 10px;
+}
+
+#section_direita article div {
+    position: relative;
+    width: 100%;
+    height: 247px;
+    background-color: #B0C4ed;
+    font-size: 14px;
+}
+
+footer {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    background-color: #371d10;
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+
+
+/* visualização tablet */
+
+@media only screen and (min-width: 501px) {
+    @media only screen and (max-width: 720px) {
+        #menu_tablet {
+            visibility: visible;
+        }
+        #section_esquerda {
+            display: none;
+        }
+        #section_direita {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        height: 169px;
+    }
+    #menu_tablet {
+        visibility: visible;
+        height: 150px;
+        padding: 0;
+    }
+    #menu_tablet a {
+        clear: left;
+        width: 97%;
+        padding: 7px;
+        text-align: left;
+        font-weight: normal;
+        border-bottom: 2px solid #ccc;
+        background-color: #8B0000;
+        font-size: 12px;
+    }
+    #section_esquerda {
+        display: none;
+    }
+    #section_direita {
+        width: 100%;
+    }
+}
