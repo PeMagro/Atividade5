@@ -21,7 +21,7 @@ main {
 header {
     position: relative;
     width: 100%;
-    height: 50px;
+    height: 65px;
     background-color: #ADFF2F;
     text-align: center;
     font-weight: bold;
@@ -33,24 +33,32 @@ header {
 #menu_tablet {
     position: relative;
     width: 100%;
-    height: 25px;
+    height: 35px;
     background-color: #006400;
     color: #fff;
-    padding-top: 5px;
     z-index: 2;
     visibility: hidden;
+    top: 14px;
 }
 
 #menu_tablet a {
     position: relative;
     float: left;
     text-align: center;
-    width: 4%;
-    padding-left: 8%;
-    padding-right: 8%;
+    width: 18%;
+    height: 25px;
+    padding: 1%;
+    padding-top: 10px;
+    padding-bottom: 0px;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
+}
+
+#menu_tablet a:hover {
+    transition: 2s all;
+    color: #000;
+    background-color: #fff;
 }
 
 #section_esquerda {
@@ -79,10 +87,16 @@ header {
     color: #fff;
     font-size: 15px;
     font-weight: bold;
-    padding: 8px;
+    padding: 7px;
     margin: 2px;
     margin-bottom: 0px;
     text-decoration: none;
+}
+
+#section_esquerda nav a:hover {
+    transition: 2s all;
+    color: #000;
+    background-color: #fff;
 }
 
 #section_esquerda aside {
@@ -159,6 +173,7 @@ footer {
     @media only screen and (max-width: 720px) {
         #menu_tablet {
             visibility: visible;
+            height: 35px;
         }
         #section_esquerda {
             display: none;
@@ -175,13 +190,13 @@ footer {
     }
     #menu_tablet {
         visibility: visible;
-        height: 150px;
+        height: 190px;
         padding: 0;
     }
     #menu_tablet a {
         clear: left;
         width: 97%;
-        padding: 7px;
+        padding: 6px;
         text-align: left;
         font-weight: normal;
         border-bottom: 2px solid #ccc;
@@ -193,5 +208,6 @@ footer {
     }
     #section_direita {
         width: 100%;
+        margin-top: 10px;
     }
 }
